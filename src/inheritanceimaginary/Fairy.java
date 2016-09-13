@@ -9,6 +9,43 @@ package inheritanceimaginary;
  *
  * @author Aerius
  */
-public class Fairy {
+public abstract class Fairy implements MythicalCreature{
+    private String name;
+    private int age;
+    private boolean hasWings;
+
+    public Fairy(String name, int age, boolean hasWings) {
+        this.name = name;
+        this.age = age;
+        this.hasWings = hasWings;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean isHasWings() {
+        return hasWings;
+    }
+
+    public void setHasWings(boolean hasWings) {
+        this.hasWings = hasWings;
+    }
     
+    @Override
+    public void greeting(){
+        System.out.println("Hello my name is " + this.getName() + " I am " + this.getAge() + " years old.");
+    }
 }
