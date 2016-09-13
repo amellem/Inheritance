@@ -16,6 +16,7 @@ public abstract class InheritanceImaginary implements MythicalCreature{
      */
     public static void main(String[] args) {
         
+              
        MythicalCreature goldBuckle = new Leprechaun(true, 12, "gold coin", "Gold Buckle", 102, false);
     
         goldBuckle.greeting();
