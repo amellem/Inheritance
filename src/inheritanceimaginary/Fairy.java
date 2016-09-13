@@ -25,6 +25,7 @@ public abstract class Fairy implements MythicalCreature{
     }
 
     public void setName(String name) {
+        //requires validation
         this.name = name;
     }
 
@@ -33,6 +34,7 @@ public abstract class Fairy implements MythicalCreature{
     }
 
     public void setAge(int age) {
+        //requires validation
         this.age = age;
     }
 
@@ -41,11 +43,12 @@ public abstract class Fairy implements MythicalCreature{
     }
 
     public void setHasWings(boolean hasWings) {
+        //requires validation
         this.hasWings = hasWings;
     }
     
     @Override
     public void greeting(){
-        System.out.println("Hello my name is " + this.getName() + " I am " + this.getAge() + " years old.");
+        System.out.println("Hello my name is " + this.getName() + " and I am " + this.getAge() + " years old.");
     }
 }

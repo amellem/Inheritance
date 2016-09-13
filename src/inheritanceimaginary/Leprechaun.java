@@ -21,13 +21,12 @@ public class Leprechaun extends Fairy {
         this.favoriteCharm = favoriteCharm;
     }
 
-    
-
     public boolean isHasPotOfGold() {
         return hasPotOfGold;
     }
 
     public void setHasPotOfGold(boolean hasPotOfGold) {
+        //requires validation
         this.hasPotOfGold = hasPotOfGold;
     }
 
@@ -36,6 +35,7 @@ public class Leprechaun extends Fairy {
     }
 
     public void setNumberOfCharms(int numberOfCharms) {
+        //requires validation
         this.numberOfCharms = numberOfCharms;
     }
 
@@ -44,11 +44,12 @@ public class Leprechaun extends Fairy {
     }
 
     public void setFavoriteCharm(String favoriteCharm) {
+        //requires validation
         this.favoriteCharm = favoriteCharm;
     }
     
     @Override
     public void bragAboutCharms(){
-        System.out.println("I have " + this.getNumberOfCharms());
+        System.out.println("I have " + this.getNumberOfCharms() + " charms!");
     }
 }

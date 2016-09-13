@@ -9,13 +9,16 @@ package inheritanceimaginary;
  *
  * @author Aerius
  */
-public class InheritanceImaginary {
+public abstract class InheritanceImaginary implements MythicalCreature{
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+        
+       MythicalCreature goldBuckle = new Leprechaun(true, 12, "gold coin", "Gold Buckle", 102, false);
     
+        goldBuckle.greeting();
+        goldBuckle.bragAboutCharms();
+    } 
 }
