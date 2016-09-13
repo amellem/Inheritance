@@ -20,5 +20,6 @@ public abstract class InheritanceImaginary implements MythicalCreature{
     
         goldBuckle.greeting();
         goldBuckle.bragAboutCharms();
+        
     } 
 }
