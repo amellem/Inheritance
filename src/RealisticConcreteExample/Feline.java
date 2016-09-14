@@ -10,41 +10,50 @@ package RealisticConcreteExample;
  * @author Aerius
  */
 public class Feline extends Animal{
-    private int lives = 9;
+    private String name;
     private String furColor;
     private boolean hasClaws;
 
-    public Feline(String furColor, boolean hasClaws, int age, boolean isHungry) {
+    public Feline(String name, boolean hasClaws, int age, boolean isHungry) {
         super(age, isHungry);
-        this.furColor = furColor;
+        this.name = name;
         this.hasClaws = hasClaws;
     }
 
-    public int getLives() {
-        return lives;
+    public final String getName() {
+        return name;
     }
 
-    public void setLives(int lives) {
-        //needs validation
-        this.lives = lives;
+    public final void setName(String name) {
+        // needs validation
+        this.name = name;
     }
 
-    public String getFurColor() {
+    public final String getFurColor() {
         return furColor;
     }
 
-    public void setFurColor(String furColor) {
-        //needs validation
+    public final void setFurColor(String furColor) {
+        // needs validation
         this.furColor = furColor;
     }
 
-    public boolean isHasClaws() {
+    public final boolean isHasClaws() {
         return hasClaws;
     }
 
     public void setHasClaws(boolean hasClaws) {
-        //needs validation
+        // needs validation
         this.hasClaws = hasClaws;
+    }
+
+    
+    public void eatFood(){
+        if(this.isIsHungry()){
+            System.out.println(this.getName() + " is eating!");
+        }else{
+            System.out.println(this.getName() + " doesn't want to eat right now.");
+        }
     }
 
 }

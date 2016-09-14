@@ -10,34 +10,36 @@ package RealisticConcreteExample;
  * @author Aerius
  */
 public class Cat extends Feline{
-    private String name;
+    private int lives = 9;
 
-    public Cat(String name, String furColor, boolean hasClaws, int age, boolean isHungry) {
-        super(furColor, hasClaws, age, isHungry);
-        this.name = name;
+    public Cat(String name, boolean hasClaws, int age, boolean isHungry) {
+        super(name, hasClaws, age, isHungry);
+    } 
+
+    public final int getLives() {
+        return lives;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public final void setLives(int lives) {
+        // needs validation
+        this.lives = lives;
     }
     
     public void useScratchingPost(){
-        if(this.isIsHungry()){
+        if(this.isHasClaws()){
             System.out.println(this.getName() + " is using the scratching post!");
         }else{
             System.out.println(this.getName() + " can't use the scratching post due to not having claws");
         }
     }
     
+    @Override
     public void eatFood(){
         if(this.isIsHungry()){
-            System.out.println(this.getName() + " is hungry!");
+            System.out.println(this.getName() + " is eating Meow Mix!");
         }else{
             System.out.println(this.getName() + " doesn't want to eat right now.");
         }
     }
+  
 }
