@@ -9,13 +9,19 @@ package RealisticInterfaceExample;
  *
  * @author Aerius
  */
-public abstract class StartUp implements Animal{
+public class StartUp{
     public static void main(String[] args) {
   
-    Animal kitty = new Cat(true, "Kitty", 3, "Black", false);
+    Animal[] animal = {
+        new HouseCat("Kitty", false, 9, "Orange")
+    };
     
-    kitty.useScratchingPost();
-    kitty.eatFood();
+    for(Animal a: animal){
+        a.eatFood();
+    }
+    
     
     }
-}
+ 
+    }
+

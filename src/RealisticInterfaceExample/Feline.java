@@ -11,57 +11,68 @@ package RealisticInterfaceExample;
  */
 public abstract class Feline implements Animal {
     private String name;
+    private boolean hasClaws;
     private int age;
     private String furColor;
     private boolean isHungry = true;
 
-    public Feline(String name, int age, String furColor, boolean isHungry) {
+    public Feline(String name, boolean hasClaws, int age, String furColor) {
         this.name = name;
+        this.hasClaws = hasClaws;
         this.age = age;
         this.furColor = furColor;
-        this.isHungry = isHungry;
     }
 
-    public String getName() {
+    public final String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public final void setName(String name) {
         // needs validation
         this.name = name;
     }
 
-    public int getAge() {
+    public boolean isHasClaws() {
+        return hasClaws;
+    }
+
+    public void setHasClaws(boolean hasClaws) {
+        this.hasClaws = hasClaws;
+    }
+
+    public final int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public final void setAge(int age) {
         // needs validation
         this.age = age;
     }
 
-    public String getFurColor() {
+    public final String getFurColor() {
         return furColor;
     }
 
-    public void setFurColor(String furColor) {
+    public final void setFurColor(String furColor) {
         // needs validation
         this.furColor = furColor;
     }
 
-    public boolean isIsHungry() {
+    public final boolean isIsHungry() {
         return isHungry;
     }
 
-    public void setIsHungry(boolean isHungry) {
+    public final void setIsHungry(boolean isHungry) {
         // needs validation
         this.isHungry = isHungry;
     }
     
+    public abstract void useScratchingPost();
+    
     @Override
     public void eatFood(){
         if(isHungry){
-            System.out.println(this.getName() + " is hungry!");
+            System.out.println(this.getName() + " is eating!");
         }else{
             System.out.println(this.getName() + " doesn't want to eat right now.");
         }

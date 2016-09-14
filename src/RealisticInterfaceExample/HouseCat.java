@@ -9,40 +9,31 @@ package RealisticInterfaceExample;
  *
  * @author Aerius
  */
-public class Cat extends Feline{
-    private boolean hasClaws;
+public class HouseCat extends Feline{
     private int lives = 9;
 
-    public Cat(boolean hasClaws, String name, int age, String furColor, boolean isHungry) {
-        super(name, age, furColor, isHungry);
-        this.hasClaws = hasClaws;
+    public HouseCat(String name, boolean hasClaws, int age, String furColor) {
+        super(name, hasClaws, age, furColor);
     }
 
-    public boolean isHasClaws() {
-        return hasClaws;
-    }
 
-    public void setHasClaws(boolean hasClaws) {
-        // needs validation
-        this.hasClaws = hasClaws;
-    }
-
-    public int getLives() {
+    public final int getLives() {
         return lives;
     }
 
-    public void setLives(int lives) {
+    public final void setLives(int lives) {
         // needs validation
         this.lives = lives;
     }
     
+    
     @Override
     public void useScratchingPost(){
-        if(hasClaws){
+        if(this.isHasClaws()){
             System.out.println(this.getName() + " is using the scratching post!");
         }else{
             System.out.println(this.getName() + " can't use the scratching post due to not having claws.");
         }
     }
-    
+
 }

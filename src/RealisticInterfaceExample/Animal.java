@@ -10,6 +10,8 @@ package RealisticInterfaceExample;
  * @author Aerius
  */
 public interface Animal {
+    
     public void eatFood();
-    public void useScratchingPost();
+    
+    
 }
