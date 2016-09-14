@@ -9,10 +9,10 @@ package RealisticAbstractExample;
  *
  * @author Aerius
  */
-public class Cat extends Feline{
+public class HouseCat extends Feline{
     private String name;
 
-    public Cat(String name, String furColor, boolean hasClaws, int age, boolean isHungry) {
+    public HouseCat(String name, String furColor, boolean hasClaws, int age, boolean isHungry) {
         super(furColor, hasClaws, age, isHungry);
         this.name = name;
     }
