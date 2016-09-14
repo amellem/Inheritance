@@ -20,30 +20,32 @@ public abstract class Feline extends Animal{
         this.hasClaws = hasClaws;
     }
 
-    public int getLives() {
+    public final int getLives() {
         return lives;
     }
 
-    public void setLives(int lives) {
+    public final void setLives(int lives) {
         // needs validation
         this.lives = lives;
     }
 
-    public String getFurColor() {
+    public final String getFurColor() {
         return furColor;
     }
 
-    public void setFurColor(String furColor) {
+    public final void setFurColor(String furColor) {
         // needs validation
         this.furColor = furColor;
     }
 
-    public boolean isHasClaws() {
+    public final boolean isHasClaws() {
         return hasClaws;
     }
 
-    public void setHasClaws(boolean hasClaws) {
+    public final void setHasClaws(boolean hasClaws) {
         // needs validation
         this.hasClaws = hasClaws;
-    }     
+    }
+    
+    public abstract void useScratchingPost();
 }

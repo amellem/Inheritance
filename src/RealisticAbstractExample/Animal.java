@@ -18,24 +18,24 @@ public abstract class Animal {
         this.isHungry = isHungry;
     }
 
-    public int getAge() {
+    public final int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public final void setAge(int age) {
         // needs validation
         this.age = age;
     }
 
-    public boolean isIsHungry() {
+    public final boolean isIsHungry() {
         return isHungry;
     }
 
-    public void setIsHungry(boolean isHungry) {
+    public final void setIsHungry(boolean isHungry) {
         // needs validation
         this.isHungry = isHungry;
     }
     
     public abstract void eatFood();
-    public abstract void useScratchingPost();
+    
 }

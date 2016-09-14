@@ -9,14 +9,19 @@ package RealisticAbstractExample;
  *
  * @author Aerius
  */
-public abstract class StartUp{
+public class StartUp{
     public static void main(String[] args) {
         
-        Animal kitty = new Cat("Kitty", "orange", true, 6, true);
+        Cat kitty = new Cat("Kitty", "orange", true, 6, true);
+        Animal[] a1={
+          new Cat("Kitty", "orange", true, 6, true)  
+        };
         
+        for(Animal a: a1){
+            a.eatFood();
+        }
+            kitty.useScratchingPost();
         
-        kitty.eatFood();
-        kitty.useScratchingPost();
     }
 
 }
