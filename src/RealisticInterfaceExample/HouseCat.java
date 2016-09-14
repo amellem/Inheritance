@@ -16,7 +16,6 @@ public class HouseCat extends Feline{
         super(name, hasClaws, age, furColor);
     }
 
-
     public final int getLives() {
         return lives;
     }
@@ -25,8 +24,7 @@ public class HouseCat extends Feline{
         // needs validation
         this.lives = lives;
     }
-    
-    
+     
     @Override
     public void useScratchingPost(){
         if(this.isHasClaws()){
