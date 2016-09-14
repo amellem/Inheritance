@@ -20,29 +20,29 @@ public abstract class Fairy implements MythicalCreature{
         this.hasWings = hasWings;
     }
 
-    public String getName() {
+    public final String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public final void setName(String name) {
         //requires validation
         this.name = name;
     }
 
-    public int getAge() {
+    public final int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public final void setAge(int age) {
         //requires validation
         this.age = age;
     }
 
-    public boolean isHasWings() {
+    public final boolean isHasWings() {
         return hasWings;
     }
 
-    public void setHasWings(boolean hasWings) {
+    public final void setHasWings(boolean hasWings) {
         //requires validation
         this.hasWings = hasWings;
     }

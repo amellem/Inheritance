@@ -21,29 +21,29 @@ public class Leprechaun extends Fairy {
         this.favoriteCharm = favoriteCharm;
     }
 
-    public boolean isHasPotOfGold() {
+    public final boolean isHasPotOfGold() {
         return hasPotOfGold;
     }
 
-    public void setHasPotOfGold(boolean hasPotOfGold) {
+    public final void setHasPotOfGold(boolean hasPotOfGold) {
         //requires validation
         this.hasPotOfGold = hasPotOfGold;
     }
 
-    public int getNumberOfCharms() {
+    public final int getNumberOfCharms() {
         return numberOfCharms;
     }
 
-    public void setNumberOfCharms(int numberOfCharms) {
+    public final void setNumberOfCharms(int numberOfCharms) {
         //requires validation
         this.numberOfCharms = numberOfCharms;
     }
 
-    public String getFavoriteCharm() {
+    public final String getFavoriteCharm() {
         return favoriteCharm;
     }
 
-    public void setFavoriteCharm(String favoriteCharm) {
+    public final void setFavoriteCharm(String favoriteCharm) {
         //requires validation
         this.favoriteCharm = favoriteCharm;
     }

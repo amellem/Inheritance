@@ -9,7 +9,7 @@ package inheritanceimaginary;
  *
  * @author Aerius
  */
-public abstract class InheritanceImaginary implements MythicalCreature{
+public abstract class StartUp implements MythicalCreature{
 
     /**
      * @param args the command line arguments

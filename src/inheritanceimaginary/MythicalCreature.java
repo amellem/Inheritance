@@ -10,6 +10,7 @@ package inheritanceimaginary;
  * @author Aerius
  */
 public interface MythicalCreature {
+    
     public void greeting();
     public void bragAboutCharms();
     
