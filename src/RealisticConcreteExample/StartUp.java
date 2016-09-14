@@ -13,7 +13,7 @@ public class StartUp {
 
     public static void main(String[] args) {
      
-        Cat c1 = new Cat("Kitty", true, 6, false);
+        HouseCat c1 = new HouseCat("Kitty", true, 6, false);
        
         c1.eatFood();
         c1.useScratchingPost();

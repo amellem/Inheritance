@@ -9,10 +9,10 @@ package RealisticConcreteExample;
  *
  * @author Aerius
  */
-public class Cat extends Feline{
+public class HouseCat extends Feline{
     private int lives = 9;
 
-    public Cat(String name, boolean hasClaws, int age, boolean isHungry) {
+    public HouseCat(String name, boolean hasClaws, int age, boolean isHungry) {
         super(name, hasClaws, age, isHungry);
     } 
 
