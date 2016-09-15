@@ -42,7 +42,7 @@ public class Feline extends Animal{
         return hasClaws;
     }
 
-    public void setHasClaws(boolean hasClaws) {
+    public final void setHasClaws(boolean hasClaws) {
         // needs validation
         this.hasClaws = hasClaws;
     }

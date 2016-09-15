@@ -21,7 +21,7 @@ public class HouseCat extends Feline{
         this.lives = lives;
     }
     
-    public void useScratchingPost(){
+    public final void useScratchingPost(){
         if(this.isHasClaws()){
             System.out.println(this.getName() + " is using the scratching post!");
         }else{
@@ -30,7 +30,7 @@ public class HouseCat extends Feline{
     }
     
     @Override
-    public void eatFood(){
+    public final void eatFood(){
         if(this.isIsHungry()){
             System.out.println(this.getName() + " is eating Meow Mix!");
         }else{
