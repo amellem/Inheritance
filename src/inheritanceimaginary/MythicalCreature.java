@@ -11,7 +11,7 @@ package inheritanceimaginary;
  */
 public interface MythicalCreature {
     
-    public void greeting();
-    public void bragAboutCharms();
+    public abstract void greeting();
+    public abstract void bragAboutCharms();
     
 }

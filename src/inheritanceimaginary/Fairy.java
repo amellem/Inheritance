@@ -48,7 +48,7 @@ public abstract class Fairy implements MythicalCreature{
     }
     
     @Override
-    public void greeting(){
+    public final void greeting(){
         System.out.println("Hello my name is " + this.getName() + " and I am " + this.getAge() + " years old.");
     }
 }

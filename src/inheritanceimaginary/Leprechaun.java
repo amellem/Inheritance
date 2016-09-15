@@ -49,7 +49,7 @@ public class Leprechaun extends Fairy {
     }
     
     @Override
-    public void bragAboutCharms(){
+    public final void bragAboutCharms(){
         System.out.println("I have " + this.getNumberOfCharms() + " charms!");
     }
 }
