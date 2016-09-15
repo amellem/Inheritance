@@ -70,7 +70,7 @@ public abstract class Feline implements Animal {
     public abstract void useScratchingPost();
     
     @Override
-    public void eatFood(){
+    public final void eatFood(){
         if(isHungry){
             System.out.println(this.getName() + " is eating!");
         }else{

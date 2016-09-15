@@ -26,7 +26,7 @@ public class HouseCat extends Feline{
     }
      
     @Override
-    public void useScratchingPost(){
+    public final void useScratchingPost(){
         if(this.isHasClaws()){
             System.out.println(this.getName() + " is using the scratching post!");
         }else{

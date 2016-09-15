@@ -11,7 +11,7 @@ package RealisticInterfaceExample;
  */
 public interface Animal {
     
-    public void eatFood();
+    public abstract void eatFood();
     
     
 }
